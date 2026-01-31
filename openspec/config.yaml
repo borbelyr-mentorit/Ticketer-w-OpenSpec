@@ -1,0 +1,40 @@
+schema: spec-driven
+
+# Project context
+context: |
+  **Domain**: Event ticketing web application with dual-architecture pattern
+  
+  **Tech Stack**:
+  - Backend: Node.js with SQLite database (Ticketer.db.sqlite)
+  - Frontend: React.js
+  - State Management: Browser localStorage for shopping basket
+  - Styling: VRisto theme (Admin), Evendo theme (Frontside)
+  
+  **Architecture**:
+  - Strict separation between Admin and Frontside applications
+  - Admin: /Admin folder, serves at /admin path, requires login
+  - Frontside: /Frontside folder, serves at /events path, public access
+  - Each side has independent backend + frontend
+  - No shared components between Admin and Frontside
+  
+  **Key Features**:
+  - Admin: CRUD operations for events/ticket types, sold tickets management
+  - Frontside: Event listing, shopping cart, ticket purchasing
+  - Responsive design (desktop + mobile)
+  
+  **Testing Strategy**:
+  - Tests explicitly deferred to future iterations
+  - Test infrastructure prepared but not yet implemented
+  - When added, must cover existing functionality comprehensively
+
+# Per-artifact rules
+rules:
+  proposal:
+    - Always specify which side (Admin/Frontside) the change affects
+    - Consider impact on dual-architecture separation
+  design:
+    - Maintain strict separation between Admin and Frontside
+    - Ensure no shared components unless explicitly planned
+  tasks:
+    - Break tasks by architectural layer (backend/frontend)
+    - Break tasks into chunks of max 2 hours
