@@ -70,11 +70,11 @@
 
 ## 9. Verification & Documentation
 
-- [ ] 9.1 Test Admin backend starts successfully on port 5001 and responds to /health
-- [ ] 9.2 Test Admin frontend starts successfully on port 5002 with VRisto theme visible
-- [ ] 9.3 Test Frontside backend starts successfully on port 5003 and responds to /health
-- [ ] 9.4 Test Frontside frontend starts successfully on port 5004 with Evendo theme visible
-- [ ] 9.5 Verify database file (Ticketer.db.sqlite) is created at project root
-- [ ] 9.6 Verify all four services can run simultaneously without port conflicts
-- [ ] 9.7 Add README with instructions for running all services in development
-- [ ] 9.8 Verify test infrastructure directories exist for all four components
+- [x] 9.1 Test Admin backend starts successfully on port 5001 and responds to /health
+- [x] 9.2 Test Admin frontend starts successfully on port 5002 with VRisto theme visible
+- [x] 9.3 Test Frontside backend starts successfully on port 5003 and responds to /health
+- [x] 9.4 Test Frontside frontend starts successfully on port 5004 with Evendo theme visible
+- [x] 9.5 Verify database file (Ticketer.db.sqlite) is created at project root
+- [x] 9.6 Verify all four services can run simultaneously without port conflicts
+- [x] 9.7 Add README with instructions for running all services in development
+- [x] 9.8 Verify test infrastructure directories exist for all four components
