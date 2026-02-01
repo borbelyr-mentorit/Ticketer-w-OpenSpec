@@ -1,23 +1,20 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import Layout from './components/layout/Layout';
+import Dashboard from './pages/Dashboard';
+import Events from './pages/Events';
 
 const App: React.FC = () => {
   return (
     <Router>
-      <div className="App">
-        <header className="App-header">
-          <h1>Ticketer Admin Dashboard</h1>
-          <nav>
-             {/* Navigation elements will go here */}
-          </nav>
-        </header>
-        <main>
-          <Routes>
-            <Route path="/admin" element={<div>Admin Home - Work in Progress</div>} />
-            {/* Additional routes will be added here */}
-          </Routes>
-        </main>
-      </div>
+      <Routes>
+        <Route path="/admin" element={<Layout />}>
+          <Route index element={<Dashboard />} />
+          <Route path="events" element={<Events />} />
+        </Route>
+        {/* Redirect base / to /admin */}
+        <Route path="/" element={<Navigate to="/admin" replace />} />
+      </Routes>
     </Router>
   );
 }
