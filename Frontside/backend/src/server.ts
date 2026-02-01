@@ -1,7 +1,8 @@
-const express = require('express');
-const cors = require('cors');
-const path = require('path');
-const initializeDatabase = require('../../database/init');
+import express, { Request, Response, Router } from 'express';
+import cors from 'cors';
+import path from 'path';
+// @ts-ignore
+import initializeDatabase from '../../../database/init';
 
 const app = express();
 const PORT = process.env.PORT || 5003;
@@ -22,10 +23,10 @@ try {
 }
 
 // API Routes
-const apiRouter = express.Router();
+const apiRouter: Router = express.Router();
 
 // Health Check
-apiRouter.get('/health', (req, res) => {
+apiRouter.get('/health', (req: Request, res: Response) => {
     res.json({ status: 'ok', service: 'Frontside Backend' });
 });
 
