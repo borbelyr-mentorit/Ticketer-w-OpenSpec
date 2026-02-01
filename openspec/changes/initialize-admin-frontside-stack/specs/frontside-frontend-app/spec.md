@@ -43,11 +43,11 @@ The Frontside frontend SHALL use React Router to handle client-side routing.
 
 ### Requirement: API proxy configuration
 
-The Frontside frontend development server SHALL proxy API requests to the Frontside backend at http://localhost:5002.
+The Frontside frontend development server SHALL proxy API requests to the Frontside backend at http://localhost:5003.
 
 #### Scenario: API requests proxied to backend
 - **WHEN** the frontend makes a request to /api/*
-- **THEN** the development server SHALL proxy the request to http://localhost:5002
+- **THEN** the development server SHALL proxy the request to http://localhost:5003
 - **AND** the response SHALL be returned to the frontend application
 
 ### Requirement: LocalStorage for shopping basket

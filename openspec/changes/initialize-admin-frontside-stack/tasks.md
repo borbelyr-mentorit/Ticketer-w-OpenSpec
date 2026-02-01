@@ -26,18 +26,18 @@
 
 ## 4. Admin Frontend - VRisto Theme Integration
 
-- [ ] 4.1 Download VRisto theme assets from https://html.vristo.sbthemes.com/
-- [ ] 4.2 Create /Admin/frontend/public/assets/ directory
-- [ ] 4.3 Copy VRisto CSS files to /Admin/frontend/public/assets/css/
-- [ ] 4.4 Copy VRisto JavaScript files to /Admin/frontend/public/assets/js/
-- [ ] 4.5 Copy VRisto images to /Admin/frontend/public/assets/images/
-- [ ] 4.6 Update /Admin/frontend/public/index.html to reference VRisto CSS and JS files
-- [ ] 4.7 Verify theme styling renders correctly in browser
+- [x] 4.1 Download VRisto theme assets from https://html.vristo.sbthemes.com/
+- [x] 4.2 Create /Admin/frontend/public/assets/ directory
+- [x] 4.3 Copy VRisto CSS files to /Admin/frontend/public/assets/css/
+- [x] 4.4 Copy VRisto JavaScript files to /Admin/frontend/public/assets/js/
+- [x] 4.5 Copy VRisto images to /Admin/frontend/public/assets/images/
+- [x] 4.6 Update /Admin/frontend/public/index.html to reference VRisto CSS and JS files
+- [x] 4.7 Verify theme styling renders correctly in browser
 
 ## 5. Frontside Backend - Server Setup
 
 - [ ] 5.1 Create /Frontside/backend/package.json with express, sqlite3, cors, and nodemon dependencies
-- [ ] 5.2 Create /Frontside/backend/server.js with Express server initialization on port 5002
+- [ ] 5.2 Create /Frontside/backend/server.js with Express server initialization on port 5003
 - [ ] 5.3 Add CORS configuration to allow requests from http://localhost:5004
 - [ ] 5.4 Add JSON body parser middleware
 - [ ] 5.5 Integrate database initialization on server startup
