@@ -1,28 +1,28 @@
 ## 1. Database Setup
 
-- [ ] 1.1 Verify database initialization script exists at /database/init.js
-- [ ] 1.2 Update database init script to ensure Events, TicketTypes, and SoldTickets tables with foreign key constraints
-- [ ] 1.3 Test database initialization runs idempotently without errors
+- [x] 1.1 Verify database initialization script exists at /database/init.js
+- [x] 1.2 Update database init script to ensure Events, TicketTypes, and SoldTickets tables with correct structure (ticketIdPrefix, maxQuantity, soldQuantity, UsedDate)
+- [x] 1.3 Test database initialization runs idempotently without errors
 
 ## 2. Admin Backend - Server Setup
 
-- [ ] 2.1 Create /Admin/backend/package.json with express, sqlite3, cors, and nodemon dependencies
-- [ ] 2.2 Create /Admin/backend/server.js with Express server initialization on port 5001
-- [ ] 2.3 Add CORS configuration to allow requests from http://localhost:5002
-- [ ] 2.4 Add JSON body parser middleware
-- [ ] 2.5 Integrate database initialization on server startup
-- [ ] 2.6 Create GET /health endpoint returning {"status": "ok"}
-- [ ] 2.7 Set up /api route prefix for all API endpoints
-- [ ] 2.8 Add npm scripts for starting the server (start, dev)
-- [ ] 2.9 Create /Admin/backend/__tests__/ directory with placeholder test file
+- [x] 2.1 Create /Admin/backend/package.json with express, sqlite3, cors, and nodemon dependencies
+- [x] 2.2 Create /Admin/backend/server.js with Express server initialization on port 5001
+- [x] 2.3 Add CORS configuration to allow requests from http://localhost:5002
+- [x] 2.4 Add JSON body parser middleware
+- [x] 2.5 Integrate database initialization on server startup
+- [x] 2.6 Create GET /health endpoint returning {"status": "ok"}
+- [x] 2.7 Set up /api route prefix for all API endpoints
+- [x] 2.8 Add npm scripts for starting the server (start, dev)
+- [x] 2.9 Create /Admin/backend/__tests__/ directory with placeholder test file
 
 ## 3. Admin Frontend - React App Setup
 
-- [ ] 3.1 Verify /Admin/frontend/package.json exists and update with react-router-dom dependency
-- [ ] 3.2 Configure React development server to run on port 5002 (via PORT=5002 in scripts or .env)
-- [ ] 3.3 Configure proxy to http://localhost:5001 for /api requests in package.json
-- [ ] 3.4 Update /Admin/frontend/src/App.js to set up React Router
-- [ ] 3.5 Create /Admin/frontend/src/__tests__/ directory with placeholder test file
+- [x] 3.1 Verify /Admin/frontend/package.json exists and update with react-router-dom dependency
+- [x] 3.2 Configure React development server to run on port 5002 (via PORT=5002 in scripts or .env)
+- [x] 3.3 Configure proxy to http://localhost:5001 for /api requests in package.json
+- [x] 3.4 Update /Admin/frontend/src/App.js to set up React Router
+- [x] 3.5 Create /Admin/frontend/src/__tests__/ directory with placeholder test file
 
 ## 4. Admin Frontend - VRisto Theme Integration
 
@@ -37,7 +37,7 @@
 ## 5. Frontside Backend - Server Setup
 
 - [ ] 5.1 Create /Frontside/backend/package.json with express, sqlite3, cors, and nodemon dependencies
-- [ ] 5.2 Create /Frontside/backend/server.js with Express server initialization on port 5003
+- [ ] 5.2 Create /Frontside/backend/server.js with Express server initialization on port 5002
 - [ ] 5.3 Add CORS configuration to allow requests from http://localhost:5004
 - [ ] 5.4 Add JSON body parser middleware
 - [ ] 5.5 Integrate database initialization on server startup
