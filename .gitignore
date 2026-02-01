@@ -53,3 +53,9 @@
 
 
 **/node_modules/*
+
+# Build outputs
+Admin/frontend/build/*
+Admin/backend/dist/*
+Frontside/frontend/build/*
+Frontside/backend/dist/*

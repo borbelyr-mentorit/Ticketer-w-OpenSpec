@@ -1,6 +1,7 @@
-const express = require('express');
-const cors = require('cors');
-const initializeDatabase = require('../../database/init');
+import express, { Request, Response } from 'express';
+import cors from 'cors';
+// @ts-ignore
+import initializeDatabase from '../../../database/init';
 
 const app = express();
 const PORT = process.env.PORT || 5001;
@@ -18,7 +19,7 @@ initializeDatabase();
 const apiRouter = express.Router();
 
 // Task 2.6: Health check
-apiRouter.get('/health', (req, res) => {
+apiRouter.get('/health', (req: Request, res: Response) => {
     res.json({ status: 'ok' });
 });
 
