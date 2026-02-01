@@ -36,15 +36,15 @@
 
 ## 5. Frontside Backend - Server Setup
 
-- [ ] 5.1 Create /Frontside/backend/package.json with express, sqlite3, cors, and nodemon dependencies
-- [ ] 5.2 Create /Frontside/backend/server.js with Express server initialization on port 5003
-- [ ] 5.3 Add CORS configuration to allow requests from http://localhost:5004
-- [ ] 5.4 Add JSON body parser middleware
-- [ ] 5.5 Integrate database initialization on server startup
-- [ ] 5.6 Create GET /health endpoint returning {"status": "ok"}
-- [ ] 5.7 Set up /api route prefix for all API endpoints
-- [ ] 5.8 Add npm scripts for starting the server (start, dev)
-- [ ] 5.9 Create /Frontside/backend/__tests__/ directory with placeholder test file
+- [x] 5.1 Create /Frontside/backend/package.json with express, sqlite3, cors, and nodemon dependencies
+- [x] 5.2 Create /Frontside/backend/server.js with Express server initialization on port 5003
+- [x] 5.3 Add CORS configuration to allow requests from http://localhost:5004
+- [x] 5.4 Add JSON body parser middleware
+- [x] 5.5 Integrate database initialization on server startup
+- [x] 5.6 Create GET /health endpoint returning {"status": "ok"}
+- [x] 5.7 Set up /api route prefix for all API endpoints
+- [x] 5.8 Add npm scripts for starting the server (start, dev)
+- [x] 5.9 Create /Frontside/backend/__tests__/ directory with placeholder test file
 
 ## 6. Frontside Frontend - React App Setup
 
