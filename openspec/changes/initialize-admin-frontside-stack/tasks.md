@@ -56,20 +56,17 @@
 
 ## 7. Frontside Frontend - Evendo Theme Integration
 
-- [ ] 7.1 Download Evendo theme assets from https://pixner.net/html/evendo/main/
-- [ ] 7.2 Create /Frontside/frontend/public/assets/ directory
-- [ ] 7.3 Copy Evendo CSS files to /Frontside/frontend/public/assets/css/
-- [ ] 7.4 Copy Evendo JavaScript files to /Frontside/frontend/public/assets/js/
-- [ ] 7.5 Copy Evendo images to /Frontside/frontend/public/assets/images/
-- [ ] 7.6 Update /Frontside/frontend/public/index.html to reference Evendo CSS and JS files
-- [ ] 7.7 Verify theme styling renders correctly in browser
+- [x] 7.1 Download Evendo theme assets from https://pixner.net/html/evendo/main/
+- [x] 7.2 Create /Frontside/frontend/public/assets/ directory
+- [x] 7.3 Copy Evendo CSS files to /Frontside/frontend/public/assets/css/
+- [x] 7.4 Copy Evendo JavaScript files to /Frontside/frontend/public/assets/js/
+- [x] 7.5 Copy Evendo images to /Frontside/frontend/public/assets/images/
+- [x] 7.6 Update /Frontside/frontend/public/index.html to reference Evendo CSS and JS files
+- [x] 7.7 Verify theme styling renders correctly in browser
 
 ## 8. Frontside Frontend - LocalStorage Integration
 
-- [ ] 8.1 Create shopping basket utility functions for localStorage (save, load, clear)
-- [ ] 8.2 Implement basket state initialization from localStorage on app load
-- [ ] 8.3 Implement automatic basket state persistence to localStorage on changes
-- [ ] 8.4 Test basket data persists across page refreshes
+ Defer implementation to a next proposal.
 
 ## 9. Verification & Documentation
 
