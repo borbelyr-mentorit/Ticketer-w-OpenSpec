@@ -25,7 +25,8 @@ function initializeDatabase() {
             fromTime TEXT NOT NULL,
             toTime TEXT NOT NULL,
             description TEXT,
-            ticketIdPrefix TEXT NOT NULL
+            ticketIdPrefix TEXT NOT NULL,
+            image TEXT NULL
         )`, (err) => {
             if (err) {
                 console.error('Error creating Events table:', err.message);
