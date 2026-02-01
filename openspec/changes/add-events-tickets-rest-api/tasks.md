@@ -1,24 +1,24 @@
 ## 1. Database Migration
 
-- [ ] 1.1 Create database migration script to add `image` column to Events table (TEXT NULL type)
-- [ ] 1.2 Update database initialization script to include image column in Events table schema
-- [ ] 1.3 Verify foreign key constraint on TicketTypes.eventid references Events.id with ON DELETE CASCADE
-- [ ] 1.4 Test database migration runs idempotently without errors
-- [ ] 1.5 Enable PRAGMA foreign_keys = ON in database connection initialization
+- [x] 1.1 Create database migration script to add `image` column to Events table (TEXT NULL type)
+- [x] 1.2 Update database initialization script to include image column in Events table schema
+- [x] 1.3 Verify foreign key constraint on TicketTypes.eventid references Events.id with ON DELETE CASCADE
+- [x] 1.4 Test database migration runs idempotently without errors
+- [x] 1.5 Enable PRAGMA foreign_keys = ON in database connection initialization
 
 ## 2. Dependency Installation
 
-- [ ] 2.1 Add `multer` package to Admin/backend/package.json dependencies
-- [ ] 2.2 Run `npm install` in Admin/backend directory
-- [ ] 2.3 Create `uploads/events/` directory structure in Admin/backend with proper permissions
+- [x] 2.1 Add `multer` package to Admin/backend/package.json dependencies
+- [x] 2.2 Run `npm install` in Admin/backend directory
+- [x] 2.3 Create `uploads/events/` directory structure in Admin/backend with proper permissions
 
 ## 3. File Upload Middleware Configuration
 
-- [ ] 3.1 Import multer in Admin/backend/src/server.ts
-- [ ] 3.2 Configure multer storage with destination `uploads/events/` and filename format `{eventId}-{timestamp}.{ext}`
-- [ ] 3.3 Configure multer file filter to accept only .jpg, .jpeg, .png, .gif extensions
-- [ ] 3.4 Set multer file size limit to 2MB
-- [ ] 3.5 Create multer upload middleware instance
+- [x] 3.1 Import multer in Admin/backend/src/server.ts
+- [x] 3.2 Configure multer storage with destination `uploads/events/` and filename format `{eventId}-{timestamp}.{ext}`
+- [x] 3.3 Configure multer file filter to accept only .jpg, .jpeg, .png, .webp, .gif extensions
+- [x] 3.4 Set multer file size limit to 2MB
+- [x] 3.5 Create multer upload middleware instance
 
 ## 4. Events REST API - List Endpoint
 

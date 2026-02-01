@@ -2,6 +2,8 @@ import express, { Request, Response } from 'express';
 import cors from 'cors';
 // @ts-ignore
 import initializeDatabase from '../../../database/init';
+import eventRoutes from './api/events';
+import ticketRoutes from './api/tickets';
 
 const app = express();
 const PORT = process.env.PORT || 5001;
@@ -22,6 +24,9 @@ const apiRouter = express.Router();
 apiRouter.get('/health', (req: Request, res: Response) => {
     res.json({ status: 'ok' });
 });
+
+apiRouter.use('/events', eventRoutes);
+apiRouter.use('/tickets', ticketRoutes);
 
 app.use('/api', apiRouter);
 
