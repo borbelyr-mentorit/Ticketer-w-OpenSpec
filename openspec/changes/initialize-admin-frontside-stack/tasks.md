@@ -48,11 +48,11 @@
 
 ## 6. Frontside Frontend - React App Setup
 
-- [ ] 6.1 Verify /Frontside/frontend/package.json exists and update with react-router-dom dependency
-- [ ] 6.2 Configure React development server to run on port 5004 (via PORT=5004 in scripts or .env)
-- [ ] 6.3 Configure proxy to http://localhost:5003 for /api requests in package.json
-- [ ] 6.4 Update /Frontside/frontend/src/App.js to set up React Router
-- [ ] 6.5 Create /Frontside/frontend/src/__tests__/ directory with placeholder test file
+- [x] 6.1 Verify /Frontside/frontend/package.json exists and update with react-router-dom dependency
+- [x] 6.2 Configure React development server to run on port 5004 (via PORT=5004 in scripts or .env)
+- [x] 6.3 Configure proxy to http://localhost:5003 for /api requests in package.json
+- [x] 6.4 Update /Frontside/frontend/src/App.js to set up React Router
+- [x] 6.5 Create /Frontside/frontend/src/__tests__/ directory with placeholder test file
 
 ## 7. Frontside Frontend - Evendo Theme Integration
 
