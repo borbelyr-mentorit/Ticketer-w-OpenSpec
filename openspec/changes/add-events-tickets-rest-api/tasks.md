@@ -22,106 +22,106 @@
 
 ## 4. Events REST API - List Endpoint
 
-- [ ] 4.1 Implement GET /api/events route handler
-- [ ] 4.2 Query database to retrieve all events with all fields (id, name, presenter, date, fromTime, toTime, description, image)
-- [ ] 4.3 Return HTTP 200 with JSON array of events
-- [ ] 4.4 Handle database errors and return HTTP 500 with error message
+- [x] 4.1 Implement GET /api/events route handler
+- [x] 4.2 Query database to retrieve all events with all fields (id, name, presenter, date, fromTime, toTime, description, image)
+- [x] 4.3 Return HTTP 200 with JSON array of events
+- [x] 4.4 Handle database errors and return HTTP 500 with error message
 
 ## 5. Events REST API - Get Single Event Endpoint
 
-- [ ] 5.1 Implement GET /api/events/:id route handler
-- [ ] 5.2 Query database to retrieve event by id including ticketidprefix field
-- [ ] 5.3 Return HTTP 200 with JSON object if event found
-- [ ] 5.4 Return HTTP 404 with error message if event not found
-- [ ] 5.5 Handle database errors and return HTTP 500 with error message
+- [x] 5.1 Implement GET /api/events/:id route handler
+- [x] 5.2 Query database to retrieve event by id including ticketidprefix field
+- [x] 5.3 Return HTTP 200 with JSON object if event found
+- [x] 5.4 Return HTTP 404 with error message if event not found
+- [x] 5.5 Handle database errors and return HTTP 500 with error message
 
 ## 6. Events REST API - Create Event Endpoint
 
-- [ ] 6.1 Implement POST /api/events route handler
-- [ ] 6.2 Validate required fields in request body (name, presenter, date, fromTime, toTime, description, ticketidprefix)
-- [ ] 6.3 Return HTTP 400 with error message if required fields are missing
-- [ ] 6.4 Validate date format and return HTTP 400 if invalid
-- [ ] 6.5 Insert new event into database with optional image field
-- [ ] 6.6 Return HTTP 201 with created event including assigned id
-- [ ] 6.7 Handle database errors and return HTTP 500 with error message
+- [x] 6.1 Implement POST /api/events route handler
+- [x] 6.2 Validate required fields in request body (name, presenter, date, fromTime, toTime, description, ticketidprefix)
+- [x] 6.3 Return HTTP 400 with error message if required fields are missing
+- [x] 6.4 Validate date format and return HTTP 400 if invalid
+- [x] 6.5 Insert new event into database with optional image field
+- [x] 6.6 Return HTTP 201 with created event including assigned id
+- [x] 6.7 Handle database errors and return HTTP 500 with error message
 
 ## 7. Events REST API - Update Event Endpoint
 
-- [ ] 7.1 Implement PATCH /api/events/:id route handler
-- [ ] 7.2 Query database to verify event exists
-- [ ] 7.3 Return HTTP 404 with error message if event not found
-- [ ] 7.4 Validate fields in request body if provided (name, presenter, date, fromTime, toTime, description, ticketidprefix, image)
-- [ ] 7.5 Return HTTP 400 with error message if field validation fails
-- [ ] 7.6 Update only provided fields in database
-- [ ] 7.7 Return HTTP 200 with updated event object
-- [ ] 7.8 Handle database errors and return HTTP 500 with error message
+- [x] 7.1 Implement PATCH /api/events/:id route handler
+- [x] 7.2 Query database to verify event exists
+- [x] 7.3 Return HTTP 404 with error message if event not found
+- [x] 7.4 Validate fields in request body if provided (name, presenter, date, fromTime, toTime, description, ticketidprefix, image)
+- [x] 7.5 Return HTTP 400 with error message if field validation fails
+- [x] 7.6 Update only provided fields in database
+- [x] 7.7 Return HTTP 200 with updated event object
+- [x] 7.8 Handle database errors and return HTTP 500 with error message
 
 ## 8. Events REST API - Delete Event Endpoint
 
-- [ ] 8.1 Implement DELETE /api/events/:id route handler
-- [ ] 8.2 Query database to verify event exists
-- [ ] 8.3 Return HTTP 404 with error message if event not found
-- [ ] 8.4 Delete event from database (cascade delete will remove ticket types automatically)
-- [ ] 8.5 Return HTTP 200 with success message
-- [ ] 8.6 Handle database errors and return HTTP 500 with error message
+- [x] 8.1 Implement DELETE /api/events/:id route handler
+- [x] 8.2 Query database to verify event exists
+- [x] 8.3 Return HTTP 404 with error message if event not found
+- [x] 8.4 Delete event from database (cascade delete will remove ticket types automatically)
+- [x] 8.5 Return HTTP 200 with success message
+- [x] 8.6 Handle database errors and return HTTP 500 with error message
 
 ## 9. Events REST API - Image Upload Endpoint
 
-- [ ] 9.1 Implement POST /api/events/:id/image route handler with multer middleware
-- [ ] 9.2 Query database to verify event exists
-- [ ] 9.3 Return HTTP 404 with error message if event not found
-- [ ] 9.4 Return HTTP 400 if no file uploaded or invalid file type
-- [ ] 9.5 Return HTTP 400 if file size exceeds 2MB limit
-- [ ] 9.6 Generate filename using format {eventId}-{timestamp}.{ext}
-- [ ] 9.7 Save uploaded file to uploads/events/ directory
-- [ ] 9.8 Update event's image field in database with relative path
-- [ ] 9.9 Return HTTP 200 with updated event object including image path
-- [ ] 9.10 Handle file system and database errors and return HTTP 500 with error message
+- [x] 9.1 Implement POST /api/events/:id/image route handler with multer middleware
+- [x] 9.2 Query database to verify event exists
+- [x] 9.3 Return HTTP 404 with error message if event not found
+- [x] 9.4 Return HTTP 400 if no file uploaded or invalid file type
+- [x] 9.5 Return HTTP 400 if file size exceeds 2MB limit
+- [x] 9.6 Generate filename using format {eventId}-{timestamp}.{ext}
+- [x] 9.7 Save uploaded file to uploads/events/ directory
+- [x] 9.8 Update event's image field in database with relative path
+- [x] 9.9 Return HTTP 200 with updated event object including image path
+- [x] 9.10 Handle file system and database errors and return HTTP 500 with error message
 
 ## 10. Tickets REST API - Create Ticket Type Endpoint
 
-- [ ] 10.1 Implement POST /api/tickets route handler
-- [ ] 10.2 Validate required fields in request body (eventId, typename, price, maxQuantity)
-- [ ] 10.3 Return HTTP 400 with error message if required fields are missing
-- [ ] 10.4 Validate eventId references an existing event
-- [ ] 10.5 Return HTTP 400 with error message if eventId is invalid
-- [ ] 10.6 Validate price has exactly 2 decimal places
-- [ ] 10.7 Return HTTP 400 with error message if price format is invalid
-- [ ] 10.8 Validate maxQuantity is an integer
-- [ ] 10.9 Return HTTP 400 with error message if maxQuantity is not an integer
-- [ ] 10.10 Insert new ticket type into database with soldQuantity initialized to 0
-- [ ] 10.11 Return HTTP 201 with created ticket type including assigned id
-- [ ] 10.12 Handle database errors and return HTTP 500 with error message
+- [x] 10.1 Implement POST /api/tickets route handler
+- [x] 10.2 Validate required fields in request body (eventId, typename, price, maxQuantity)
+- [x] 10.3 Return HTTP 400 with error message if required fields are missing
+- [x] 10.4 Validate eventId references an existing event
+- [x] 10.5 Return HTTP 400 with error message if eventId is invalid
+- [x] 10.6 Validate price has exactly 2 decimal places
+- [x] 10.7 Return HTTP 400 with error message if price format is invalid
+- [x] 10.8 Validate maxQuantity is an integer
+- [x] 10.9 Return HTTP 400 with error message if maxQuantity is not an integer
+- [x] 10.10 Insert new ticket type into database with soldQuantity initialized to 0
+- [x] 10.11 Return HTTP 201 with created ticket type including assigned id
+- [x] 10.12 Handle database errors and return HTTP 500 with error message
 
 ## 11. Tickets REST API - List Ticket Types Endpoint
 
-- [ ] 11.1 Implement GET /api/tickets route handler
-- [ ] 11.2 Query database to retrieve all ticket types with all fields (id, eventId, typename, price, maxQuantity, soldQuantity)
-- [ ] 11.3 Return HTTP 200 with JSON array of ticket types
-- [ ] 11.4 Handle database errors and return HTTP 500 with error message
+- [x] 11.1 Implement GET /api/tickets route handler
+- [x] 11.2 Query database to retrieve all ticket types with all fields (id, eventId, typename, price, maxQuantity, soldQuantity)
+- [x] 11.3 Return HTTP 200 with JSON array of ticket types
+- [x] 11.4 Handle database errors and return HTTP 500 with error message
 
 ## 12. Tickets REST API - Update Ticket Type Endpoint
 
-- [ ] 12.1 Implement PATCH /api/tickets/:id route handler
-- [ ] 12.2 Query database to verify ticket type exists
-- [ ] 12.3 Return HTTP 404 with error message if ticket type not found
-- [ ] 12.4 Validate fields in request body if provided (price, maxQuantity)
-- [ ] 12.5 Validate price format if provided (2 decimal places)
-- [ ] 12.6 Return HTTP 400 with error message if price format is invalid
-- [ ] 12.7 Validate maxQuantity is integer if provided
-- [ ] 12.8 Return HTTP 400 with error message if maxQuantity is not an integer
-- [ ] 12.9 Update only provided fields in database
-- [ ] 12.10 Return HTTP 200 with updated ticket type object
-- [ ] 12.11 Handle database errors and return HTTP 500 with error message
+- [x] 12.1 Implement PATCH /api/tickets/:id route handler
+- [x] 12.2 Query database to verify ticket type exists
+- [x] 12.3 Return HTTP 404 with error message if ticket type not found
+- [x] 12.4 Validate fields in request body if provided (price, maxQuantity)
+- [x] 12.5 Validate price format if provided (2 decimal places)
+- [x] 12.6 Return HTTP 400 with error message if price format is invalid
+- [x] 12.7 Validate maxQuantity is integer if provided
+- [x] 12.8 Return HTTP 400 with error message if maxQuantity is not an integer
+- [x] 12.9 Update only provided fields in database
+- [x] 12.10 Return HTTP 200 with updated ticket type object
+- [x] 12.11 Handle database errors and return HTTP 500 with error message
 
 ## 13. Tickets REST API - Delete Ticket Type Endpoint
 
-- [ ] 13.1 Implement DELETE /api/tickets/:id route handler
-- [ ] 13.2 Query database to verify ticket type exists
-- [ ] 13.3 Return HTTP 404 with error message if ticket type not found
-- [ ] 13.4 Delete ticket type from database
-- [ ] 13.5 Return HTTP 200 with success message
-- [ ] 13.6 Handle database errors and return HTTP 500 with error message
+- [x] 13.1 Implement DELETE /api/tickets/:id route handler
+- [x] 13.2 Query database to verify ticket type exists
+- [x] 13.3 Return HTTP 404 with error message if ticket type not found
+- [x] 13.4 Delete ticket type from database
+- [x] 13.5 Return HTTP 200 with success message
+- [x] 13.6 Handle database errors and return HTTP 500 with error message
 
 ## 14. Error Response Standardization
 
