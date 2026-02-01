@@ -44,3 +44,36 @@ Frontend implementations MUST integrate specified HTML themes:
 - React components MUST adapt theme markup, not replace it
 - Theme assets (CSS, JS, images) MUST be properly integrated into React build process
 - Maintain theme visual consistency while implementing dynamic functionality
+
+## Running the Project
+
+The project consists of four services that need to be run separately during development.
+
+### 1. Admin Stack
+- **Backend (Port 5001)**:
+  ```bash
+  cd Admin/backend
+  npm start
+  ```
+- **Frontend (Port 5002)**:
+  ```bash
+  cd Admin/frontend
+  npm start
+  ```
+
+### 2. Frontside Stack
+- **Backend (Port 5003)**:
+  ```bash
+  cd Frontside/backend
+  npm start
+  ```
+- **Frontend (Port 5004)**:
+  ```bash
+  cd Frontside/frontend
+  npm start
+  ```
+
+### Verification
+You can verify the backends are running by visiting:
+- Admin Health: [http://localhost:5001/api/health](http://localhost:5001/api/health)
+- Frontside Health: [http://localhost:5003/api/health](http://localhost:5003/api/health)
