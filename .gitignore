@@ -62,3 +62,6 @@ Frontside/backend/dist/*
 
 # Database file
 Ticketer.db.sqlite
+
+# Uploaded files
+Admin/backend/uploads/*
